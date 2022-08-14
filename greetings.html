@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+<style type="text/css">
+body
+{
+  height: 100%;
+  width: 100%;
+  background-image: url('C:/Users/Premsingh Padya/Desktop/StaticWebsite/images/bgimage.gif');
+  position: fixed;
+}
+.room
+{
+  background-color: lightgoldenrodyellow;
+  position:relative;
+  width:320px;
+  height:440px;
+  margin: 0 auto;
+  margin-top:40px;
+}
+
+.frontdoor
+{
+  background-color: greenyellow;
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:320px;
+  height:440px;
+  cursor: progress;
+ 
+  transform-origin: left;
+  transition: all 0.5s ease-in-out;
+}
+
+.frontdoorOpen
+{
+  /*prespectiv creates the frontdoor open effect*/
+  transform: perspective(1800px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-120deg);
+}
+.marq
+ {
+  background-color: orange;
+  align-content: center;
+}
+ 
+ .marq1{
+  background-color: green;
+  align-content: center;
+}
+table
+{
+  height: 80%;
+  width: 95%;
+  background-color: crimson;
+}
+
+footer
+{
+  background-color: orange;
+}
+.Founderimage
+{
+  cursor: alias;
+
+}
+p
+{
+  background-color: whitesmoke;
+}
+</style>
+</head>
+<body>
+  <div class="marq">
+<marquee direction="down"> Happy 75th Independence Day </marquee>
+
+</div>
+<p><marquee> <center> <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > | <img src="images/bgimage.gif" height="20px" width="40px" > |  </marquee></p>
+<div class="marq1"  ><marquee> Happy 75th Independence Day (India)</marquee></div>
+
+<center>
+<table>
+  <tr>
+<td class="Founderimage"><center><img src="C:/Users/Premsingh Padya/Desktop/StaticWebsite/images/premsinghpadya.png" style="width:200px;height:300px;">
+  <br> &emsp;&emsp;&emsp;  <b>Premsingh Padya</b><br>&emsp;&emsp;&emsp;<u>Founder and President</u></center>
+</td>
+    <td>
+<div class="room">
+  <img src="C:/Users/Premsingh Padya/Desktop/StaticWebsite/images/logo.png" style="width:80px;height:80px;">
+  <center><img src="C:/Users/Premsingh Padya/Desktop/StaticWebsite/images/Indep.png" style="height:340px;width:300px;"></center>
+  <div class="frontdoor">  
+    <br><br>
+    <center>
+    <img src="images/logo.png" height="100px" width="100px" />
+    <p>Click on this front Door to Open</p>
+    <div class="bg"><img src="images/bgimage.gif" height="140px" width="300px" ></div>
+  </div>
+</div></td>
+  </tr>
+</table>
+</center>
+<script type="text/javascript">
+var element = document.querySelector(".frontdoor");
+element.addEventListener("click", togglefrontdoor);
+
+function togglefrontdoor() {
+  element.classList.toggle("frontdoorOpen");
+}
+</script>
+<footer>
+  <center>
+  All rights reserved ...! @Sardar_V_DO(D&D_Team)
+</center>
+</footer>
+</body>
+</html>
+
