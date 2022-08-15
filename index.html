@@ -89,7 +89,7 @@ p
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-#myAudio
+#media
 {
   display: none;
 }
@@ -114,9 +114,7 @@ p
 <div class="room">
   <img src="images/logo.png" style="width:80px;height:80px;">
   <center><img src="images/Indep.png" style="height:300px;width:250px;">
-  <audio id="myAudio" controls autoplay>
-  <source src="mp3/indep.mp3" type="audio/mpeg">
- </audio>
+  <section id="media"></section>
   </center>
   <div class="frontdoor">  
     <br><br>
@@ -136,6 +134,15 @@ element.addEventListener("click", togglefrontdoor);
 function togglefrontdoor() {
   element.classList.toggle("frontdoorOpen");
 }
+  
+var audio = document.createElement('audio');
+var source = document.createElement('source');
+var media = document.getElementById('media');
+media.appendChild(audio);
+audio.appendChild(source);
+source.setAttribute('src', 'https://glpro.s3.amazonaws.com/_util/smpte/111.mp3');
+source.setAttribute('type', 'audio/mpeg');
+audio.setAttribute('controls', 'controls');
 </script>
   
   <br><br><br>
